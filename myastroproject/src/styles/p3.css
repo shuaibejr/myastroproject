@@ -1,0 +1,331 @@
+    
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto&display=swap');
+    
+  
+   
+    body{
+         /* background-image: url(m.jpg); */
+         background-color:rgb(204, 228, 238);
+         margin:10px;
+         padding:10px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+          
+            }
+ 
+ 
+ 
+     .grid-container{
+ 
+         display: grid;
+         background-color: aliceblue;
+         grid-template-columns: auto auto auto;
+         padding: 10px;
+ 
+     }       
+ 
+    
+     nav { 
+        background-color:none;
+              
+              
+              
+         }
+    
+    
+      ul {
+      
+        margin: 0;
+        display:flex;
+        list-style-type: none;
+        padding: 0;
+        font-size:20px; font-weight:bold;
+        float:right;      
+        
+        }
+        
+        li a { 
+              display: flex;
+              padding: 8px 16px;
+              text-decoration: none;
+              
+              /* .search{
+                             float:top;
+                          
+                        } */
+              
+              
+        
+            }
+      
+      /* Change the link color on hover */
+        li a:hover  {
+                      background-color:#555;
+                      color:rgb(75, 149, 145);
+                    }
+                    
+        .main{
+ 
+          margin:10px;
+          padding:10px;
+          font-weight:20px;
+          
+        }      
+  
+        h2, h3,h4{
+          color:rgb(119, 11, 190);
+        }
+        a:hover{
+ 
+         background-color: rgb(32, 169, 193);
+         color: rgb(84, 127, 207);
+         
+ 
+        }  
+                    
+       
+  
+         img{
+           float:right;
+           border-radius: 8px;
+ 
+         }
+           
+          
+           
+                 
+         .personal {
+             text-align:center;
+             color:rgb(51, 186, 112);
+                  
+                      }   
+                      
+                      
+          .form {
+         
+             text-align:center;
+             color:rgb(36, 24, 9);
+              padding:20px; 
+              border-radius: 4px;
+              margin: 20vh auto;
+     
+             background-color:rgb(146, 143, 143);
+             font-size:20px; 
+             font-weight:bold;
+             width: 400px;
+                       
+                }
+ 
+ 
+         input[type=text]{
+             width: 100%;
+             padding: 12px 20px;
+             margin: 8px 2px;
+             display: inline-block;
+             border: 1px solid#ab8989;
+             border-radius: 2px;
+             box-sizing: border-box;
+     
+                }         
+            
+         input[type=number]{
+            width: 100%;
+            padding: 10px 15px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid#ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+ 
+            }    
+           
+ 
+         input[type=submit]{
+ 
+           width: 100%;
+           background-color:rgb(146, 146, 7);
+           color:rgb(50, 187, 205);
+           padding: 15px 5px;
+           margin: 5px 0;
+           border: non5; 
+           border-radius: 4px;
+           cursor: pointer;
+           }  
+ 
+          
+ 
+         input[type=submit]:hover{
+            background-color: rgb(116, 48, 128);
+            }    
+ 
+ 
+ 
+ 
+                
+ 
+                      
+         .footer{
+ 
+           text-align: center;
+           margin:8px 0;
+           padding: 20px 0;
+           bottom: 0;     
+           position: flex;
+           left: 0;
+           color: rgb(38, 255, 0);
+           background-color: rgb(226, 141, 43);
+           width: 100%;
+             
+            }            
+ 
+         @media (min-width:500px){
+             .grid-container{
+             display: grid;
+             grid-template-columns: auto;
+               } 
+ 
+ 
+            }
+ 
+            /* making the paragraph bold using pseudo class*/
+            /* article p:first-child{
+             font-size: 100%;
+             font-weight: bold;
+            } */
+ 
+            /* making the paragraph bold using pseudo element with double colon*/
+            /* article p::first-line{
+             font-size: 100%;
+             font-weight: bold;
+            } */
+ 
+            article p:first-child::first-line {
+             font-size: 100%;
+             font-weight: bold;
+ 
+             
+           }
+ 
+            /* created div class to use for fadin animation */
+           .fade-in-right{
+           
+           animation: fadein 5s;
+           
+           
+           }
+ 
+           @keyframes fadein {
+ 
+             0% {opacity: 0;}
+               100% {
+                 opacity: 1;
+ 
+               }
+             }
+ 
+        .search button:hover{
+            background: #513f9f;
+            color: white;
+   
+           }
+            
+ 
+         .search button{
+           width:20;
+           
+           margin: 5px;
+           padding: 10px 10px;
+           display:inline-block;
+             
+           border-radius: 4px;
+           box-sizing: border-box;
+         }  
+ 
+          
+         input[type=search]{
+           width: 80%;
+           padding: 10px 10px;
+           margin:  0;
+           display: inline-block;
+           border: 1px solid#37821e;
+           border-radius: 4px;
+           box-sizing: border-box;
+         }
+ 
+         .search form{
+           margin: 0;
+           display: flex;
+         }
+ 
+         .dark-mode {
+           background-color: #130f0f;
+           color: #f8f7f7;
+           transition: all 0.5s ease-in;
+           
+         }
+         ul img{
+           background-color: aliceblue;
+           width: 30px;
+           height: 30px;
+           margin: 7px;
+           
+         }
+ 
+         ul img:hover  {
+           background-color:#6061aa;
+           
+         }
+ 
+ 
+       /*  slide-fade-in */
+ 
+ 
+ .container {
+   max-width: 300px;
+   margin-inline: auto;
+ }
+ 
+ 
+ img {
+   width: 300px;
+   height: auto;
+ 
+ }
+ .div{
+   text-align: center;
+ }
+ .item:not(:first-child) {
+   opacity: 0;
+   transition: opacity 0.5s, transform 0.5s;
+ }
+ 
+   .item__content {
+   
+   align-items: center;
+   padding: 10rem;
+   border-radius: 10px;
+ }  
+ 
+ .left {
+   transform-origin: left center;
+   transform: translateX(-50%);
+ }
+ 
+ .right {
+   transform-origin: right center;
+   transform: translateX(50%);
+ }
+ 
+ .slide-in {
+   opacity: 1 !important;
+   transform: translateX(0);
+ }
+ 
+        
+         
+ 
+             
+ 
+            
+                 
+            
